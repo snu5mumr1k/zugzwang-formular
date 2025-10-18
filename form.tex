@@ -6,17 +6,52 @@
 
 \begin{document}
   \inputencoding{utf8}
+  \Form
 
   \includegraphics[height=40px]{images/logo.jpg}
   \newline
 
-  \begin{Form}
-    \begin{tabular}{|l|l|}
-    \hline
+  Beitrittserkl{\"a}rung als Mitglied \newline
 
-    \TextField{Familienname} & \TextField{Vorname} \\
+  \begin{tabular}{|l|l|} \hline
+    \TextField{Familienname} & \TextField{Vorname}          \\ \hline
+    \TextField{PLZ, Wohnort}                  &                              \\ \cline{1-1}
+    \TextField{Stra{\ss}e, Hausnummer}        &                              \\ \hline
+    \TextField{Email}                         & \TextField{Nationalit{\"a}t} \\ \hline
+    \TextField{Mobil}                         & \TextField{Geschlecht}       \\ \hline
+    \TextField{Telefon}                       & \TextField{FIDE ID}          \\ \hline
+    \TextField{Geburtstag}                    & \TextField{FIDE Titel}       \\ \hline
+    \TextField{Geburtsort}                    & \TextField{Beruf}            \\ \hline
 
-    \hline
-    \end{tabular}
-  \end{Form}
+    \multicolumn{2}{|l|}{Bevollm{\"a}chtigter:} \\ \hline
+    \TextField{Familienname} & \TextField{Vorname}                \\ \hline
+    \TextField{PLZ, Wohnort}                  & \TextField{Stra{\ss}e, Hausnummer} \\ \hline
+    \TextField{Handy}                         & \TextField{Tel. Privat}            \\ \hline
+
+    \multicolumn{2}{|l|}{Mitgliedschaft:} \\
+    \multicolumn{2}{|l|}{K{\"u}ndigungstermin j{\"a}hrlich zum 31.12.} \\
+    \multicolumn{2}{|l|}{Zahlung sofort bei Neueintritt -- J{\"a}hrliche Abbuchung} \\ \hline
+
+    \CheckBox{Ordentliche Mitgliedschaft}   & 70.00 \texteuro \\ \hline
+    \CheckBox{F{\"o}rdernde Mitgliedschaft} & 35.00 \texteuro (unbegrenzt) \\ \hline
+    \CheckBox{Sch{\"u}ler, Ausbildende}     & 35.00 \texteuro          \\ \hline
+    \CheckBox{FIDE Titeltr{\"a}ger} & Beitragsfrei          \\ \hline
+  \end{tabular}
+  \newline
+
+  \begin{tabular}{|l|} \hline
+    Ermächtigung zum Einzug von Forderungen durch SEPA-Lastschrift. \\
+    Hiermit ermächtige ich Sie widerruflich, die von mir zu entrichtenten Mitgliedsbeiträge, \\
+    bei Fälligkeit zu Lasten meines Girokontos, als SEPA-Lastschriftsmandat einzuziehen. \\
+    Sollte mein Konto die erforderliche Deckung nicht aufweist, \\
+    besteht keine Verpflichtung zur Einlösung! \\ \hline
+    
+    \TextField{Name des Mitglieds} \\ \hline
+    \TextField{Name des Kontoinhabers} \\ \hline
+    \TextField{PLZ, Wohnort} \\ \hline
+    \TextField{Stra{\ss}e, Nr} \\ \hline
+    \TextField{Name des Geldinstituts} \\ \hline
+    \TextField{IBAN} \\ \hline
+  \end{tabular}
+
 \end{document}
